@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form">
+    <div class="retangule">
+        <h1>Desafío 03</h1>
+        <h3>Calculadora IMC</h3>
+        <label for="weight">Ingrese su peso (kg)</label>
+        <input id="weight" type="number" placeholder="75">
+        <label for="height">Ingrese su talla (m)</label>
+        <input id="height" type="number" placeholder="1.70">
+        <button id="Calcular" onclick="calculoBMI()" >Calcular</button>
+        <span id="resultado">Resultado:</span>
+    </div>
+
+    <div class="retangule">
+        <h3>Factorial</h3>
+        <label for="numeroF">Ingrese el número </label>
+        <input type="number" name="" id="numeroF" placeholder="5">
+        <button onclick="calcularFactorial()">Calcular</button>
+        <span id="resultadoFactorial">Resultado: </span>
+    </div>
+
+    <div class="retangule">
+        <h3>Convertir soles a dolares</h3>
+        <label for="numeroDolar">Escriba el número</label>
+        <input  type="number" name="" id="numeroDolar" placeholder="5">
+        <button onclick="calcularD()">Calcular</button>
+        <span id="resultadoDolar">Resultado en dolar: </span>
+    </div>
+
+    <div class="retangule">
+        <h3>Calcular perímetro y area de un rectángulo</h3>
+        <label for="baseV">Base (b): </label>
+        <input type="number" id="baseV" placeholder="5">
+        <label for="alturaV">Altura (a): </label>
+        <input type="number" id="alturaV" placeholder="5">
+        <button onclick="calculatePSala()">Calcular</button>
+        <span id="resultateAP">Resultado: </span>
+    </div>
+
+    <div class="retangule">
+        <h3>Calcular perímetro y area de un circular</h3>
+        <sub>Valor Pi = 3.14</sub> <br>
+        <label for="radioValue">¿Cual es el radio del circulo?</label>
+        <input type="number" id="radioValue" placeholder="5">
+        <button onclick="calculateAPCircular()" >Calcular</button>
+        <span id="resRadio">Radio:</span>
+    </div>
+    
+    <div class="retangule">
+        <h3>Tabla de multiplicación</h3>
+        <label for="numMult">Escriba el número</label>
+        <input type="number" name="" id="numMult" placeholder="5">
+        <button onclick="calculateTabla()">Calcular</button>
+        <br><span id="multiTable">Resultado:</span>
+    </div>
+
+    <div class="retangule">
+        <span style="font-weight: bold;">Limpiar todo</span>
+        <button onclick="clearAll()" class="clearButton">Limpiar Todo</button>
+    </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
