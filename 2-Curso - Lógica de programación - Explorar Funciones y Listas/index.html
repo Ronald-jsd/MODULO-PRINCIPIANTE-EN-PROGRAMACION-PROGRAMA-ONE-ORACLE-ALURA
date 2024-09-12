@@ -19,15 +19,22 @@
             <div class="container__informaciones">
                 <div class="container__texto">
                     <h1></h1>
-                    <p  class="texto__parrafo"></p>
+                    <div class="container_ValueIntento">
+                    <span id="inputIntentos">Escriba la cantidad maxima de intentos:</span>
+                    <br>
+                    <input type="number" id="aciertoMaximo" class="containerIntento" >
+                    <button class="buttonAceptar" onclick="asignarIntento()">Aceptar</button>
+
+                    <span id="inputIntentosError"></span>
 
                 </div>
-                <input id="valorUsuario" type="number" min="1" max="10" class="container__input">
+                    <p  class="texto__parrafo"></p> 
+                </div>
+                <input id="valorUsuario" type="number" min="1" max="10" class="container__input" placeholder="ej: 5">
                 
                 <div class="chute container__botones">
                                 <!--onclick = "nameFunction()"  -->
-                     <button onclick="verificarIntento()" class="container__boton">Intentar</button>
-                    
+                    <button onclick="intentoPrincipal()" class="container__boton">Intentar</button>                    
                     <button onclick="nuevoJuego()" class="container__boton" id="reiniciar" disabled>Nuevo juego</button>
                 </div>
             </div>
